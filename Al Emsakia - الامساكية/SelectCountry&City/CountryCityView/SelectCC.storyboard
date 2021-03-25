@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vlw-gk-Z3a">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SelectCC View Controller-->
+        <scene sceneID="bwi-he-bgm">
+            <objects>
+                <viewController storyboardIdentifier="SelectCCViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vlw-gk-Z3a" customClass="SelectCCViewController" customModule="Al_Emsakia___الامساكية" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YBq-xp-8bG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKI-oA-OhT">
+                                <rect key="frame" x="100" y="261" width="214" height="50"/>
+                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bKI-oA-OhT" secondAttribute="height" multiplier="107:25" id="6VO-EL-6ne"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="تاكيد الدولة و المدينة">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="AutoLocationPressed:" destination="vlw-gk-Z3a" eventType="touchUpInside" id="AVq-L4-ihe"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xI4-1o-Tz2">
+                                <rect key="frame" x="10" y="179" width="394" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="استخرج الدولة و المدينة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg0-lt-ZgT">
+                                        <rect key="frame" x="0.0" y="0.0" width="320.5" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.84056586030000002" green="0.0" blue="0.82119335920000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPw-SA-rzJ">
+                                        <rect key="frame" x="328.5" y="0.0" width="65.5" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="0.60820539380000005" green="0.0048630186709999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="mappin.and.ellipse" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="39"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AutoLocationBtn:" destination="vlw-gk-Z3a" eventType="touchUpInside" id="ogC-c4-dO2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QPw-SA-rzJ" firstAttribute="height" secondItem="Hg0-lt-ZgT" secondAttribute="height" id="hhW-tz-PWz"/>
+                                    <constraint firstAttribute="width" secondItem="Hg0-lt-ZgT" secondAttribute="height" multiplier="394:47" id="nhW-99-DQV"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="او" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSf-RP-4JV">
+                                <rect key="frame" x="194" y="424.5" width="26.5" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltn-5x-T2E">
+                                <rect key="frame" x="100" y="702" width="214" height="50"/>
+                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ltn-5x-T2E" secondAttribute="height" multiplier="107:25" id="sSJ-2O-LIV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="تاكيد الدولة و المدينة">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ManualLocationPressed:" destination="vlw-gk-Z3a" eventType="touchUpInside" id="MzU-d9-LMO"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dc9-oP-WXu">
+                                <rect key="frame" x="30" y="536" width="354" height="96"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اختر دولتك" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQt-pF-Uz3">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اختر مدينتك" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uvl-ch-zsq">
+                                        <rect key="frame" x="0.0" y="62" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dc9-oP-WXu" secondAttribute="height" multiplier="59:16" id="Kdp-fL-TGc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lr7-q6-s4R"/>
+                        <color key="backgroundColor" red="0.88326996560000004" green="0.84302788969999998" blue="0.84255933760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lr7-q6-s4R" firstAttribute="trailing" secondItem="ltn-5x-T2E" secondAttribute="trailing" constant="100" id="0hP-3f-6e8"/>
+                            <constraint firstItem="jSf-RP-4JV" firstAttribute="centerY" secondItem="YBq-xp-8bG" secondAttribute="centerY" id="5fL-HD-ySk"/>
+                            <constraint firstItem="lr7-q6-s4R" firstAttribute="trailing" secondItem="bKI-oA-OhT" secondAttribute="trailing" constant="100" id="7XU-g2-68V"/>
+                            <constraint firstItem="xI4-1o-Tz2" firstAttribute="top" secondItem="lr7-q6-s4R" secondAttribute="top" constant="135" id="98S-Id-sQI"/>
+                            <constraint firstItem="lr7-q6-s4R" firstAttribute="trailing" secondItem="xI4-1o-Tz2" secondAttribute="trailing" constant="10" id="AFq-2S-Vat"/>
+                            <constraint firstItem="lr7-q6-s4R" firstAttribute="trailing" secondItem="Dc9-oP-WXu" secondAttribute="trailing" constant="30" id="Fqp-L8-spB"/>
+                            <constraint firstItem="ltn-5x-T2E" firstAttribute="leading" secondItem="lr7-q6-s4R" secondAttribute="leading" constant="100" id="Hfh-6Y-QoW"/>
+                            <constraint firstItem="Dc9-oP-WXu" firstAttribute="leading" secondItem="lr7-q6-s4R" secondAttribute="leading" constant="30" id="Jh5-1f-etS"/>
+                            <constraint firstItem="lr7-q6-s4R" firstAttribute="bottom" secondItem="ltn-5x-T2E" secondAttribute="bottom" constant="110" id="TU1-ah-Top"/>
+                            <constraint firstItem="xI4-1o-Tz2" firstAttribute="leading" secondItem="lr7-q6-s4R" secondAttribute="leading" constant="10" id="UM1-ES-GOh"/>
+                            <constraint firstItem="bKI-oA-OhT" firstAttribute="top" secondItem="xI4-1o-Tz2" secondAttribute="bottom" constant="35" id="ZNP-Jc-rIm"/>
+                            <constraint firstItem="bKI-oA-OhT" firstAttribute="leading" secondItem="lr7-q6-s4R" secondAttribute="leading" constant="100" id="sjA-7H-t7H"/>
+                            <constraint firstItem="ltn-5x-T2E" firstAttribute="top" secondItem="Dc9-oP-WXu" secondAttribute="bottom" constant="70" id="u5a-Dw-f3X"/>
+                            <constraint firstItem="jSf-RP-4JV" firstAttribute="centerX" secondItem="YBq-xp-8bG" secondAttribute="centerX" id="ucB-2W-0JI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AutoCCLabel" destination="Hg0-lt-ZgT" id="0AG-k6-qON"/>
+                        <outlet property="CityPickerTextField" destination="Uvl-ch-zsq" id="GXj-s9-UBd"/>
+                        <outlet property="CountryPickerTextField" destination="NQt-pF-Uz3" id="DT1-1e-uha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cY-ug-iem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="202"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
