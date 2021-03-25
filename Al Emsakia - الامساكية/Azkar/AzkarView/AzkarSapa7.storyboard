@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AxA-bF-2wd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Azkar Sapa7 View Controller-->
+        <scene sceneID="o0L-Jq-Ghq">
+            <objects>
+                <viewController storyboardIdentifier="AzkarSapa7ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AxA-bF-2wd" customClass="AzkarSapa7ViewController" customModule="Al_Emsakia___الامساكية" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="djK-MZ-1iS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="اذكار الصباح" translatesAutoresizingMaskIntoConstraints="NO" id="bcx-Oa-dJR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="753"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQg-T3-dz8">
+                                <rect key="frame" x="70" y="812" width="274" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="09T-Fn-rr3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="الرئيسية"/>
+                                <connections>
+                                    <action selector="backToMain:" destination="AxA-bF-2wd" eventType="touchUpInside" id="Xk1-FU-gdw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EXB-9A-8SI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bcx-Oa-dJR" firstAttribute="top" secondItem="EXB-9A-8SI" secondAttribute="top" id="9Bt-xR-vPb"/>
+                            <constraint firstItem="oQg-T3-dz8" firstAttribute="leading" secondItem="EXB-9A-8SI" secondAttribute="leading" constant="70" id="A6K-WR-jxV"/>
+                            <constraint firstItem="bcx-Oa-dJR" firstAttribute="trailing" secondItem="EXB-9A-8SI" secondAttribute="trailing" id="DJL-XI-xIR"/>
+                            <constraint firstItem="bcx-Oa-dJR" firstAttribute="leading" secondItem="EXB-9A-8SI" secondAttribute="leading" id="SEF-bV-1S7"/>
+                            <constraint firstItem="oQg-T3-dz8" firstAttribute="bottom" secondItem="EXB-9A-8SI" secondAttribute="bottom" id="YpT-If-nyE"/>
+                            <constraint firstItem="oQg-T3-dz8" firstAttribute="top" secondItem="bcx-Oa-dJR" secondAttribute="bottom" constant="15" id="hGl-Oq-8If"/>
+                            <constraint firstItem="EXB-9A-8SI" firstAttribute="trailing" secondItem="oQg-T3-dz8" secondAttribute="trailing" constant="70" id="sfA-fp-mNp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yyz-RL-AgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372.46376811594206" y="13.392857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="اذكار الصباح" width="750" height="1200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
