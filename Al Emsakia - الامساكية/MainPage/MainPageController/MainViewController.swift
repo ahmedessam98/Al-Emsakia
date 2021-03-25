@@ -32,8 +32,11 @@ class MainViewController: UIViewController{
     
 //Azkar View
     @IBAction func azkarSaba7Btn(_ sender: UIButton) {
+        show(story: "AzkarSapa7", VC: AzkarSapa7ViewController.self)
     }
+    
     @IBAction func azkarMasa2Btn(_ sender: UIButton) {
+        show(story: "AzkarMasa2", VC: AzkarMasa2ViewController.self)
     }
     
 //Go to Quran View
