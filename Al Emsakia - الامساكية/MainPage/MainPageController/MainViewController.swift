@@ -41,6 +41,7 @@ class MainViewController: UIViewController{
     
 //Go to Quran View
     @IBAction func goToQuranBtn(_ sender: UIButton) {
+        show(story: "Quran", VC: PageViewController.self)
     }
     
 //Go to Qibla View

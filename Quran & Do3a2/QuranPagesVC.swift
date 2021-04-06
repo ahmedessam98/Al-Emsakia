@@ -11,11 +11,7 @@ class QuranPagesVC: UIViewController {
     @IBOutlet weak var fehresQuran: UIButton!
     @IBOutlet weak var quranImageView: UIImageView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
 
-    }
     override func viewWillAppear(_ animated: Bool) {
         
         savedPage = defaults.integer(forKey: "savedPage")

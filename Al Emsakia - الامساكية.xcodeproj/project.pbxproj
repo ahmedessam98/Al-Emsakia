@@ -16,12 +16,15 @@
 		7F4B08412603943B00C412F2 /* AutoLocationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B08402603943B00C412F2 /* AutoLocationFunctions.swift */; };
 		7F4B08482603CFFE00C412F2 /* WillAppearMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B08472603CFFE00C412F2 /* WillAppearMain.swift */; };
 		7F4B084A2603D20900C412F2 /* LabelDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10BA32260126FF00EBA7D5 /* LabelDataEntry.swift */; };
+		7F5A2D49260E4C1C00DCDBF3 /* QuranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A2D48260E4C1C00DCDBF3 /* QuranViewController.swift */; };
+		7F5A2D4C260F86AF00DCDBF3 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A2D4B260F86AF00DCDBF3 /* ContainerViewController.swift */; };
 		7F8153A42602562F007D3C60 /* SelectCCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153A32602562F007D3C60 /* SelectCCViewController.swift */; };
 		7F8153A726025788007D3C60 /* DidLoadCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153A626025788007D3C60 /* DidLoadCC.swift */; };
 		7F8153AB260257A2007D3C60 /* PickerDataCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153AA260257A2007D3C60 /* PickerDataCC.swift */; };
 		7F8153AE260257B8007D3C60 /* AutoLocationCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153AD260257B8007D3C60 /* AutoLocationCC.swift */; };
 		7F8153B126025814007D3C60 /* Additional Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153B026025814007D3C60 /* Additional Function.swift */; };
 		7F8153B526027015007D3C60 /* DidLoadMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153B426027015007D3C60 /* DidLoadMain.swift */; };
+		7FA97EA8261A15020018A832 /* LoadFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97EA7261A15020018A832 /* LoadFunction.swift */; };
 		7FB92B7A25FE1031002601E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7925FE1031002601E9 /* AppDelegate.swift */; };
 		7FB92B7C25FE1031002601E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7B25FE1031002601E9 /* SceneDelegate.swift */; };
 		7FB92B7E25FE1031002601E9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7D25FE1031002601E9 /* MainViewController.swift */; };
@@ -33,6 +36,10 @@
 		7FD1792F260CC4F400BD384A /* AzkarMasa2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD1792E260CC4F400BD384A /* AzkarMasa2.storyboard */; };
 		7FD17935260CCA1300BD384A /* AzkarSapa7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD17934260CCA1300BD384A /* AzkarSapa7ViewController.swift */; };
 		7FD17938260CCA2800BD384A /* AzkarMasa2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD17937260CCA2800BD384A /* AzkarMasa2ViewController.swift */; };
+		7FD17940260DDBD600BD384A /* Quran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD1793F260DDBD600BD384A /* Quran.storyboard */; };
+		7FD17943260DDDBE00BD384A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD17942260DDDBE00BD384A /* PageViewController.swift */; };
+		7FD17946260DDE5B00BD384A /* UIPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD17945260DDE5B00BD384A /* UIPageController.swift */; };
+		7FD1794C260DE20100BD384A /* AdditionalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1794B260DE20100BD384A /* AdditionalFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,12 +52,15 @@
 		7F10BA5B2601294600EBA7D5 /* Do3a2QuranVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Do3a2QuranVC.swift; sourceTree = "<group>"; };
 		7F4B08402603943B00C412F2 /* AutoLocationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLocationFunctions.swift; sourceTree = "<group>"; };
 		7F4B08472603CFFE00C412F2 /* WillAppearMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillAppearMain.swift; sourceTree = "<group>"; };
+		7F5A2D48260E4C1C00DCDBF3 /* QuranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranViewController.swift; sourceTree = "<group>"; };
+		7F5A2D4B260F86AF00DCDBF3 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		7F8153A32602562F007D3C60 /* SelectCCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCCViewController.swift; sourceTree = "<group>"; };
 		7F8153A626025788007D3C60 /* DidLoadCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidLoadCC.swift; sourceTree = "<group>"; };
 		7F8153AA260257A2007D3C60 /* PickerDataCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDataCC.swift; sourceTree = "<group>"; };
 		7F8153AD260257B8007D3C60 /* AutoLocationCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLocationCC.swift; sourceTree = "<group>"; };
 		7F8153B026025814007D3C60 /* Additional Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Additional Function.swift"; sourceTree = "<group>"; };
 		7F8153B426027015007D3C60 /* DidLoadMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidLoadMain.swift; sourceTree = "<group>"; };
+		7FA97EA7261A15020018A832 /* LoadFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFunction.swift; sourceTree = "<group>"; };
 		7FB92B7625FE1031002601E9 /* Al Emsakia - الامساكية.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Al Emsakia - الامساكية.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB92B7925FE1031002601E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FB92B7B25FE1031002601E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +74,10 @@
 		7FD1792E260CC4F400BD384A /* AzkarMasa2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AzkarMasa2.storyboard; sourceTree = "<group>"; };
 		7FD17934260CCA1300BD384A /* AzkarSapa7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzkarSapa7ViewController.swift; sourceTree = "<group>"; };
 		7FD17937260CCA2800BD384A /* AzkarMasa2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzkarMasa2ViewController.swift; sourceTree = "<group>"; };
+		7FD1793F260DDBD600BD384A /* Quran.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quran.storyboard; sourceTree = "<group>"; };
+		7FD17942260DDDBE00BD384A /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		7FD17945260DDE5B00BD384A /* UIPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageController.swift; sourceTree = "<group>"; };
+		7FD1794B260DE20100BD384A /* AdditionalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +196,9 @@
 		7F10BA6726012CA500EBA7D5 /* Quran */ = {
 			isa = PBXGroup;
 			children = (
+				7FD1793E260CD72C00BD384A /* QuranController */,
+				7FD1793D260CD72100BD384A /* QuranView */,
+				7FD1793C260CD70F00BD384A /* QuranModel */,
 			);
 			path = Quran;
 			sourceTree = "<group>";
@@ -200,6 +217,25 @@
 			children = (
 			);
 			path = QeblaCompass;
+			sourceTree = "<group>";
+		};
+		7FA97EA42619D0D90018A832 /* UIPage */ = {
+			isa = PBXGroup;
+			children = (
+				7FD17942260DDDBE00BD384A /* PageViewController.swift */,
+				7FD17945260DDE5B00BD384A /* UIPageController.swift */,
+			);
+			path = UIPage;
+			sourceTree = "<group>";
+		};
+		7FA97EA52619D0F90018A832 /* QuranPage */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A2D48260E4C1C00DCDBF3 /* QuranViewController.swift */,
+				7FA97EA7261A15020018A832 /* LoadFunction.swift */,
+				7F5A2D4B260F86AF00DCDBF3 /* ContainerViewController.swift */,
+			);
+			path = QuranPage;
 			sourceTree = "<group>";
 		};
 		7FB92B6D25FE1031002601E9 = {
@@ -253,6 +289,31 @@
 				7FD17937260CCA2800BD384A /* AzkarMasa2ViewController.swift */,
 			);
 			path = AzkarController;
+			sourceTree = "<group>";
+		};
+		7FD1793C260CD70F00BD384A /* QuranModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FD1794B260DE20100BD384A /* AdditionalFunctions.swift */,
+			);
+			path = QuranModel;
+			sourceTree = "<group>";
+		};
+		7FD1793D260CD72100BD384A /* QuranView */ = {
+			isa = PBXGroup;
+			children = (
+				7FD1793F260DDBD600BD384A /* Quran.storyboard */,
+			);
+			path = QuranView;
+			sourceTree = "<group>";
+		};
+		7FD1793E260CD72C00BD384A /* QuranController */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97EA42619D0D90018A832 /* UIPage */,
+				7FA97EA52619D0F90018A832 /* QuranPage */,
+			);
+			path = QuranController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +378,7 @@
 				7FB92B8625FE1034002601E9 /* LaunchScreen.storyboard in Resources */,
 				7FB92B8325FE1034002601E9 /* Assets.xcassets in Resources */,
 				7FB92B8125FE1031002601E9 /* Main.storyboard in Resources */,
+				7FD17940260DDBD600BD384A /* Quran.storyboard in Resources */,
 				7FD1792C260CC4A600BD384A /* AzkarSapa7.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,11 +390,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA97EA8261A15020018A832 /* LoadFunction.swift in Sources */,
 				7FD17938260CCA2800BD384A /* AzkarMasa2ViewController.swift in Sources */,
 				7F10BA4F2601274100EBA7D5 /* Extension.swift in Sources */,
+				7F5A2D4C260F86AF00DCDBF3 /* ContainerViewController.swift in Sources */,
+				7FD17946260DDE5B00BD384A /* UIPageController.swift in Sources */,
 				7F10BA53260128CF00EBA7D5 /* QuranPageViewController.swift in Sources */,
 				7F8153B526027015007D3C60 /* DidLoadMain.swift in Sources */,
 				7F4B084A2603D20900C412F2 /* LabelDataEntry.swift in Sources */,
+				7FD1794C260DE20100BD384A /* AdditionalFunctions.swift in Sources */,
 				7FB92B7E25FE1031002601E9 /* MainViewController.swift in Sources */,
 				7F8153B126025814007D3C60 /* Additional Function.swift in Sources */,
 				7F10BA5C2601294600EBA7D5 /* Do3a2QuranVC.swift in Sources */,
@@ -341,10 +407,12 @@
 				7FB92B7A25FE1031002601E9 /* AppDelegate.swift in Sources */,
 				7F4B08412603943B00C412F2 /* AutoLocationFunctions.swift in Sources */,
 				7F8153AB260257A2007D3C60 /* PickerDataCC.swift in Sources */,
+				7FD17943260DDDBE00BD384A /* PageViewController.swift in Sources */,
 				7F10BA592601294200EBA7D5 /* QuranPagesVC.swift in Sources */,
 				7F8153A726025788007D3C60 /* DidLoadCC.swift in Sources */,
 				7F0EC5252604AB7400B1FAC1 /* AzanAPI.swift in Sources */,
 				7F4B08482603CFFE00C412F2 /* WillAppearMain.swift in Sources */,
+				7F5A2D49260E4C1C00DCDBF3 /* QuranViewController.swift in Sources */,
 				7FB92B7C25FE1031002601E9 /* SceneDelegate.swift in Sources */,
 				7FD17935260CCA1300BD384A /* AzkarSapa7ViewController.swift in Sources */,
 				7F0EC5222604AB4A00B1FAC1 /* Azan.swift in Sources */,

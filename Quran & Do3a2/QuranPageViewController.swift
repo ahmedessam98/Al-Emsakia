@@ -18,13 +18,13 @@ class QuranPageViewController: UIViewController {
 //        theMark.setBackgroundImage(UIImage(named: "علامة المصحف")!, for: .normal)
 //
 //            }
-    
-
-    @IBOutlet weak var pageControllerHolderView: UIView!
-    lazy var QuranPagesVC: UIPageViewController = {
-        return UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
-    }()
-    
+//
+//
+//    @IBOutlet weak var pageControllerHolderView: UIView!
+//    lazy var QuranPagesVC: UIPageViewController = {
+//        return UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
+//    }()
+//
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,27 +33,27 @@ class QuranPageViewController: UIViewController {
     }
     
     func setupPageViewController() {
-        //set its datasource and delegate methods
-        self.QuranPagesVC.dataSource = self
-        self.QuranPagesVC.delegate = self
-        self.QuranPagesVC.view.frame = .zero
-        
-        //Show view controller with initial page - page zero
-        let pageController = getPageFor(index: 0)
-        guard let initialPageController = pageController else { return }
-        self.QuranPagesVC.setViewControllers([initialPageController], direction: .forward, animated: false, completion: nil)
-        self.addChild(self.QuranPagesVC)
-        
-        //Add to holder view
-        self.pageControllerHolderView.addSubview(self.QuranPagesVC.view)
-        self.QuranPagesVC.didMove(toParent: self)
-       
-        //Pin to super view - (holder view)
-        self.QuranPagesVC.view.translatesAutoresizingMaskIntoConstraints = false
-        self.QuranPagesVC.view.topAnchor.constraint(equalTo: self.pageControllerHolderView.topAnchor).isActive = true
-        self.QuranPagesVC.view.leftAnchor.constraint(equalTo: self.pageControllerHolderView.leftAnchor).isActive = true
-        self.QuranPagesVC.view.bottomAnchor.constraint(equalTo: self.pageControllerHolderView.bottomAnchor).isActive = true
-        self.QuranPagesVC.view.rightAnchor.constraint(equalTo: self.pageControllerHolderView.rightAnchor).isActive = true
+//        //set its datasource and delegate methods
+//        self.QuranPagesVC.dataSource = self
+//        self.QuranPagesVC.delegate = self
+//        self.QuranPagesVC.view.frame = .zero
+//        
+//        //Show view controller with initial page - page zero
+//        let pageController = getPageFor(index: 0)
+//        guard let initialPageController = pageController else { return }
+//        self.QuranPagesVC.setViewControllers([initialPageController], direction: .forward, animated: false, completion: nil)
+//        self.addChild(self.QuranPagesVC)
+//        
+//        //Add to holder view
+//        self.pageControllerHolderView.addSubview(self.QuranPagesVC.view)
+//        self.QuranPagesVC.didMove(toParent: self)
+//       
+//        //Pin to super view - (holder view)
+//        self.QuranPagesVC.view.translatesAutoresizingMaskIntoConstraints = false
+//        self.QuranPagesVC.view.topAnchor.constraint(equalTo: self.pageControllerHolderView.topAnchor).isActive = true
+//        self.QuranPagesVC.view.leftAnchor.constraint(equalTo: self.pageControllerHolderView.leftAnchor).isActive = true
+//        self.QuranPagesVC.view.bottomAnchor.constraint(equalTo: self.pageControllerHolderView.bottomAnchor).isActive = true
+//        self.QuranPagesVC.view.rightAnchor.constraint(equalTo: self.pageControllerHolderView.rightAnchor).isActive = true
     }
     
     //Helper method to create view controllers for page view controller

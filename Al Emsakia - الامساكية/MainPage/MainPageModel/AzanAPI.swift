@@ -31,19 +31,31 @@ extension MainViewController {
 
     func taskHandler (data: Data? , urlresponse:URLResponse? , error:Error?)->Void {
             
-            do {
+         
+        if let data = data {
+           do {
                 
-                let results:Azan = try JSONDecoder().decode(Azan.self, from: data!)
+              let results:Azan = try JSONDecoder().decode(Azan.self, from: data)
                 print(results.status)
                 didRetrieveAzanInfo(result: results)
                 
-            }catch{
+              }catch{
                 print(error)
             }
-            
-            //let datastring = String(data: data!, encoding: .utf8)
-            //delegate?.didRetrieveCountryInfo(countryInfo: datastring!)
-            
-        }
+        }else {
+            //1. Creat alert
+                let alert = UIAlertController(title: "No Internet Connection", message: "", preferredStyle: .alert)
+                
+            //2. Creat action
+                let cancell = UIAlertAction(title: "Cancell", style: .default, handler: nil)
+                
+            //3. add action to alert
+                alert.addAction(cancell)
+                
+            //4. present the alert
+                present(alert, animated: true, completion: nil)
+                
 
+        }
+    }
 }
