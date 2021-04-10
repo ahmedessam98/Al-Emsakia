@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="Tyw-ec-tq0">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Xda-8O-eJm" customClass="PageViewController" customModule="Al_Emsakia___الامساكية" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7qu-dK-yRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="104"/>
+        </scene>
+        <!--Quran View Controller-->
+        <scene sceneID="Bos-Kw-RXU">
+            <objects>
+                <viewController storyboardIdentifier="QuranViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bj7-fK-IlP" customClass="QuranViewController" customModule="Al_Emsakia___الامساكية" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vBE-9F-iw3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0006" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-Pf-Dbw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <containerView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xg-KX-4gV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <connections>
+                                    <segue destination="Cf3-QI-2DS" kind="embed" identifier="Container" id="ppe-P4-z4W"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bu7-GR-CXu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bu7-GR-CXu" firstAttribute="trailing" secondItem="5Xg-KX-4gV" secondAttribute="trailing" id="3ww-4b-gXL"/>
+                            <constraint firstItem="5Xg-KX-4gV" firstAttribute="top" secondItem="vBE-9F-iw3" secondAttribute="top" id="84I-D0-vfp"/>
+                            <constraint firstItem="bu7-GR-CXu" firstAttribute="bottom" secondItem="5Xg-KX-4gV" secondAttribute="bottom" id="OBM-66-IGb"/>
+                            <constraint firstItem="cAj-Pf-Dbw" firstAttribute="bottom" secondItem="bu7-GR-CXu" secondAttribute="bottom" id="U9Y-tt-NBY"/>
+                            <constraint firstItem="5Xg-KX-4gV" firstAttribute="leading" secondItem="bu7-GR-CXu" secondAttribute="leading" id="W2p-NK-Ltr"/>
+                            <constraint firstItem="bu7-GR-CXu" firstAttribute="trailing" secondItem="cAj-Pf-Dbw" secondAttribute="trailing" id="esF-gH-PmV"/>
+                            <constraint firstItem="cAj-Pf-Dbw" firstAttribute="top" secondItem="vBE-9F-iw3" secondAttribute="top" id="fUm-lq-2gP"/>
+                            <constraint firstItem="cAj-Pf-Dbw" firstAttribute="leading" secondItem="bu7-GR-CXu" secondAttribute="leading" id="rbg-3b-Lcy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="5Xg-KX-4gV" id="QFI-pz-VZS"/>
+                        <outlet property="quranPageImage" destination="cAj-Pf-Dbw" id="rdD-GR-hRt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPg-51-8jj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="104"/>
+        </scene>
+        <!--Container View Controller-->
+        <scene sceneID="S8f-E7-Rqa">
+            <objects>
+                <viewController storyboardIdentifier="ContainerViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Cf3-QI-2DS" customClass="ContainerViewController" customModule="Al_Emsakia___الامساكية" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NBJ-RY-FFd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="A84-SA-Wec">
+                                <rect key="frame" x="0.0" y="737" width="414" height="125"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DR3-Ia-tKy">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wd-dv-8Iv">
+                                                <rect key="frame" x="0.0" y="0.0" width="204.5" height="60"/>
+                                                <color key="backgroundColor" red="0.88326996560000004" green="0.84302788969999998" blue="0.84255933760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                                <state key="normal" title="حفظ العلامة">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="saveMarkPressed:" destination="Cf3-QI-2DS" eventType="touchUpInside" id="4Oe-2l-BkB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRf-fi-QlO">
+                                                <rect key="frame" x="209.5" y="0.0" width="204.5" height="60"/>
+                                                <color key="backgroundColor" red="0.88326996560000004" green="0.84302788969999998" blue="0.84255933760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                <state key="normal" title="الانتقال للعلامة">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goToMark:" destination="Cf3-QI-2DS" eventType="touchUpInside" id="tb5-zG-Zwl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vZK-J3-qN0">
+                                        <rect key="frame" x="0.0" y="65" width="414" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmI-JK-Mwr">
+                                                <rect key="frame" x="0.0" y="0.0" width="204.5" height="60"/>
+                                                <color key="backgroundColor" red="0.88326996560000004" green="0.84302788969999998" blue="0.84255933760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                                <state key="normal" title="الفهرس">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="indexMenu:" destination="Cf3-QI-2DS" eventType="touchUpInside" id="GIU-KD-AIt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0D-uT-Ybt">
+                                                <rect key="frame" x="209.5" y="0.0" width="204.5" height="60"/>
+                                                <color key="backgroundColor" red="0.88326996560000004" green="0.84302788969999998" blue="0.84255933760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                <state key="normal" title="دعاء ختم القران">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="do3a2Quran:" destination="Cf3-QI-2DS" eventType="touchUpInside" id="K0g-r4-6Hf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A84-SA-Wec" secondAttribute="height" multiplier="414:125" id="TaT-ld-bGA"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuR-IQ-FpD">
+                                <rect key="frame" x="279" y="0.0" width="135" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xuR-IQ-FpD" secondAttribute="height" multiplier="9:11" id="EvY-e9-zCe"/>
+                                    <constraint firstAttribute="width" constant="135" id="ssZ-wa-KjG"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHD-RM-FbW">
+                                <rect key="frame" x="5" y="35" width="180" height="56.5"/>
+                                <color key="backgroundColor" red="0.88326996560000004" green="0.84302788969999998" blue="0.84255933760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="HCm-P9-IIo"/>
+                                    <constraint firstAttribute="width" secondItem="MHD-RM-FbW" secondAttribute="height" multiplier="179:56" id="kGg-sQ-jX7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="العودة الي الرئيسية">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToMain:" destination="Cf3-QI-2DS" eventType="touchUpInside" id="xMA-7u-JMC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3WD-GQ-MVs"/>
+                        <constraints>
+                            <constraint firstItem="xuR-IQ-FpD" firstAttribute="trailing" secondItem="3WD-GQ-MVs" secondAttribute="trailing" id="5Xl-xI-3f7"/>
+                            <constraint firstItem="MHD-RM-FbW" firstAttribute="leading" secondItem="3WD-GQ-MVs" secondAttribute="leading" constant="5" id="6Xj-7w-zUL"/>
+                            <constraint firstItem="3WD-GQ-MVs" firstAttribute="bottom" secondItem="A84-SA-Wec" secondAttribute="bottom" id="Jca-WL-gU0"/>
+                            <constraint firstItem="A84-SA-Wec" firstAttribute="bottom" secondItem="3WD-GQ-MVs" secondAttribute="bottom" id="RDm-g3-zGG"/>
+                            <constraint firstItem="xuR-IQ-FpD" firstAttribute="top" secondItem="NBJ-RY-FFd" secondAttribute="top" id="Uhb-kL-lgB"/>
+                            <constraint firstItem="3WD-GQ-MVs" firstAttribute="trailing" secondItem="A84-SA-Wec" secondAttribute="trailing" id="ZDH-eO-d7n"/>
+                            <constraint firstItem="MHD-RM-FbW" firstAttribute="top" secondItem="NBJ-RY-FFd" secondAttribute="top" constant="35" id="fE0-EI-NYm"/>
+                            <constraint firstItem="A84-SA-Wec" firstAttribute="leading" secondItem="NBJ-RY-FFd" secondAttribute="leading" id="jod-T9-ThQ"/>
+                            <constraint firstItem="A84-SA-Wec" firstAttribute="leading" secondItem="3WD-GQ-MVs" secondAttribute="leading" id="ms9-j0-OAB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theMark" destination="xuR-IQ-FpD" id="AV0-Bp-qeI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zq1-wD-23M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608.6956521739132" y="103.79464285714285"/>
+        </scene>
+        <!--Fehres Table View Controller-->
+        <scene sceneID="sJg-Hf-kkc">
+            <objects>
+                <viewController storyboardIdentifier="fehresTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Une-TC-6DN" customClass="fehresTableViewController" customModule="Al_Emsakia___الامساكية" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fwv-Bk-WUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mA0-M9-VtO">
+                                <rect key="frame" x="0.0" y="94" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ItP-i7-xex">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ItP-i7-xex" id="Rk1-cB-Kvp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTC-B4-8Zh">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="العودة الي المصحف">
+                                    <color key="titleColor" red="0.16406514489999999" green="0.19715650239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToQuran:" destination="Une-TC-6DN" eventType="touchUpInside" id="0xI-Qk-GZO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سور القرآن الكريم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oCh-dO-7oS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <color key="textColor" red="0.49671208859999999" green="0.37578117849999998" blue="0.38296118379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Tv-VF-FLd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Tv-VF-FLd" firstAttribute="trailing" secondItem="aTC-B4-8Zh" secondAttribute="trailing" id="Afs-F1-CWr"/>
+                            <constraint firstItem="0Tv-VF-FLd" firstAttribute="trailing" secondItem="oCh-dO-7oS" secondAttribute="trailing" id="IHK-67-GT1"/>
+                            <constraint firstItem="0Tv-VF-FLd" firstAttribute="trailing" secondItem="mA0-M9-VtO" secondAttribute="trailing" id="OvX-zj-SqT"/>
+                            <constraint firstItem="oCh-dO-7oS" firstAttribute="leading" secondItem="0Tv-VF-FLd" secondAttribute="leading" id="PAI-wr-d79"/>
+                            <constraint firstItem="0Tv-VF-FLd" firstAttribute="bottom" secondItem="mA0-M9-VtO" secondAttribute="bottom" constant="50" id="SoH-rN-thx"/>
+                            <constraint firstItem="aTC-B4-8Zh" firstAttribute="bottom" secondItem="0Tv-VF-FLd" secondAttribute="bottom" id="aal-BP-wv7"/>
+                            <constraint firstItem="aTC-B4-8Zh" firstAttribute="leading" secondItem="0Tv-VF-FLd" secondAttribute="leading" id="dd7-Bq-cix"/>
+                            <constraint firstItem="mA0-M9-VtO" firstAttribute="top" secondItem="0Tv-VF-FLd" secondAttribute="top" constant="50" id="hyA-N2-AtA"/>
+                            <constraint firstItem="mA0-M9-VtO" firstAttribute="leading" secondItem="0Tv-VF-FLd" secondAttribute="leading" id="lTJ-Ux-XaC"/>
+                            <constraint firstItem="oCh-dO-7oS" firstAttribute="top" secondItem="0Tv-VF-FLd" secondAttribute="top" id="ovK-eA-S1p"/>
+                            <constraint firstItem="aTC-B4-8Zh" firstAttribute="top" secondItem="mA0-M9-VtO" secondAttribute="bottom" id="pI5-Rn-0GT"/>
+                            <constraint firstItem="mA0-M9-VtO" firstAttribute="top" secondItem="oCh-dO-7oS" secondAttribute="bottom" id="wia-25-3QI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="mA0-M9-VtO" id="i2Y-Kd-5iq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="geW-Qn-KWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2436" y="104"/>
+        </scene>
+        <!--Do 3a2 View Controller-->
+        <scene sceneID="Kgx-ux-bcF">
+            <objects>
+                <viewController storyboardIdentifier="Do3a2Quran" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Icl-9F-Krd" customClass="do3a2ViewController" customModule="Al_Emsakia___الامساكية" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hc2-Ke-ePX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="دعاء ختم القران" translatesAutoresizingMaskIntoConstraints="NO" id="Tij-qa-Ina">
+                                <rect key="frame" x="0.0" y="44" width="414" height="752"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqk-wo-meM">
+                                <rect key="frame" x="50" y="796" width="314" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Iqk-wo-meM" secondAttribute="height" multiplier="329:69" id="vZ1-tm-K7n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
+                                <state key="normal" title="العودة الي المصحف">
+                                    <color key="titleColor" red="0.18298378879314917" green="0.65333518401015223" blue="0.079511431510825015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToQuran:" destination="Icl-9F-Krd" eventType="touchUpInside" id="wzU-1y-1vf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gwg-Tc-TbN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gwg-Tc-TbN" firstAttribute="trailing" secondItem="Iqk-wo-meM" secondAttribute="trailing" constant="50" id="3RH-yg-4ee"/>
+                            <constraint firstItem="Tij-qa-Ina" firstAttribute="top" secondItem="gwg-Tc-TbN" secondAttribute="top" id="7ND-0V-nHH"/>
+                            <constraint firstItem="Iqk-wo-meM" firstAttribute="bottom" secondItem="gwg-Tc-TbN" secondAttribute="bottom" id="FCk-kD-ndj"/>
+                            <constraint firstItem="gwg-Tc-TbN" firstAttribute="trailing" secondItem="Tij-qa-Ina" secondAttribute="trailing" id="Gex-Da-iOn"/>
+                            <constraint firstItem="Iqk-wo-meM" firstAttribute="top" secondItem="Tij-qa-Ina" secondAttribute="bottom" id="Zd1-C1-R8M"/>
+                            <constraint firstItem="Iqk-wo-meM" firstAttribute="leading" secondItem="gwg-Tc-TbN" secondAttribute="leading" constant="50" id="t1N-bq-2uP"/>
+                            <constraint firstItem="Tij-qa-Ina" firstAttribute="leading" secondItem="gwg-Tc-TbN" secondAttribute="leading" id="xYi-fJ-b1R"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPC-Ai-063" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1986.9565217391305" y="764.73214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0006" width="750" height="1043"/>
+        <image name="دعاء ختم القران" width="673" height="960"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
