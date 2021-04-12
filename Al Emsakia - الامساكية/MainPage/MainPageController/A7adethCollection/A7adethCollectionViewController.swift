@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSource {
+extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return a7adeth.count
@@ -11,12 +11,12 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "a7adethCell", for: indexPath) as! A7adethCollectionViewCell
         
-        cell.a7adethLabel.text = a7adeth.randomElement()
+        cell.a7adethLabel.text = a7adeth[currentCellIndex]
         
         return cell
     }
     
-    
+
     
     
 }

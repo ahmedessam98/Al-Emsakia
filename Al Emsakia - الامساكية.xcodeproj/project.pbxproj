@@ -27,6 +27,9 @@
 		7F82CB2E26234AFF00FC0D9B /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB2D26234AFF00FC0D9B /* LocationDelegate.swift */; };
 		7F82CB3126234B8500FC0D9B /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB3026234B8500FC0D9B /* UserDefaults+Extensions.swift */; };
 		7F82CB3426234CA900FC0D9B /* DidLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB3326234CA900FC0D9B /* DidLoad.swift */; };
+		7F82CB3F2623CDD500FC0D9B /* A7adethCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB3E2623CDD500FC0D9B /* A7adethCollectionViewController.swift */; };
+		7F82CB422623CFB900FC0D9B /* A7adethCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB412623CFB900FC0D9B /* A7adethCollectionViewCell.swift */; };
+		7F82CB462623D24300FC0D9B /* A7adethTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB452623D24300FC0D9B /* A7adethTimer.swift */; };
 		7FA97EA8261A15020018A832 /* LoadFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97EA7261A15020018A832 /* LoadFunction.swift */; };
 		7FB92B7A25FE1031002601E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7925FE1031002601E9 /* AppDelegate.swift */; };
 		7FB92B7C25FE1031002601E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7B25FE1031002601E9 /* SceneDelegate.swift */; };
@@ -67,6 +70,9 @@
 		7F82CB2D26234AFF00FC0D9B /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
 		7F82CB3026234B8500FC0D9B /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		7F82CB3326234CA900FC0D9B /* DidLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidLoad.swift; sourceTree = "<group>"; };
+		7F82CB3E2623CDD500FC0D9B /* A7adethCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A7adethCollectionViewController.swift; sourceTree = "<group>"; };
+		7F82CB412623CFB900FC0D9B /* A7adethCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A7adethCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F82CB452623D24300FC0D9B /* A7adethTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A7adethTimer.swift; sourceTree = "<group>"; };
 		7FA97EA7261A15020018A832 /* LoadFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFunction.swift; sourceTree = "<group>"; };
 		7FB92B7625FE1031002601E9 /* Al Emsakia - الامساكية.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Al Emsakia - الامساكية.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB92B7925FE1031002601E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 				7FB92B7D25FE1031002601E9 /* MainViewController.swift */,
 				7F4B08472603CFFE00C412F2 /* WillAppearMain.swift */,
 				7F10BA32260126FF00EBA7D5 /* LabelDataEntry.swift */,
+				7F82CB442623D20200FC0D9B /* A7adethCollection */,
 			);
 			path = MainPageController;
 			sourceTree = "<group>";
@@ -246,6 +253,16 @@
 				7F82CB3326234CA900FC0D9B /* DidLoad.swift */,
 			);
 			path = QeblaController;
+			sourceTree = "<group>";
+		};
+		7F82CB442623D20200FC0D9B /* A7adethCollection */ = {
+			isa = PBXGroup;
+			children = (
+				7F82CB3E2623CDD500FC0D9B /* A7adethCollectionViewController.swift */,
+				7F82CB412623CFB900FC0D9B /* A7adethCollectionViewCell.swift */,
+				7F82CB452623D24300FC0D9B /* A7adethTimer.swift */,
+			);
+			path = A7adethCollection;
 			sourceTree = "<group>";
 		};
 		7FA97EA42619D0D90018A832 /* UIPage */ = {
@@ -430,12 +447,15 @@
 				7FD1794C260DE20100BD384A /* AdditionalFunctions.swift in Sources */,
 				7FB92B7E25FE1031002601E9 /* MainViewController.swift in Sources */,
 				7F82CB2B26234A8100FC0D9B /* CLLocationManager + Extensions.swift in Sources */,
+				7F82CB3F2623CDD500FC0D9B /* A7adethCollectionViewController.swift in Sources */,
+				7F82CB462623D24300FC0D9B /* A7adethTimer.swift in Sources */,
 				7F8153B126025814007D3C60 /* Additional Function.swift in Sources */,
 				7F8153A42602562F007D3C60 /* SelectCCViewController.swift in Sources */,
 				7F8153AE260257B8007D3C60 /* AutoLocationCC.swift in Sources */,
 				7FCD2E8526218F0E00A938DC /* fehresTableViewController.swift in Sources */,
 				7FB92B7A25FE1031002601E9 /* AppDelegate.swift in Sources */,
 				7F4B08412603943B00C412F2 /* AutoLocationFunctions.swift in Sources */,
+				7F82CB422623CFB900FC0D9B /* A7adethCollectionViewCell.swift in Sources */,
 				7F8153AB260257A2007D3C60 /* PickerDataCC.swift in Sources */,
 				7F82CB3426234CA900FC0D9B /* DidLoad.swift in Sources */,
 				7F82CB3126234B8500FC0D9B /* UserDefaults+Extensions.swift in Sources */,

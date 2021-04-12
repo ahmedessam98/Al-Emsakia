@@ -3,6 +3,14 @@ import UIKit
 
 extension MainViewController {
     
+    override func viewDidLoad() {
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        startTimer()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         

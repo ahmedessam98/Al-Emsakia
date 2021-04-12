@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fDJ-Y3-qUu">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1062"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1069"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNV-o9-aif">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
@@ -408,28 +408,33 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbO-QH-pu7">
-                                                <rect key="frame" x="0.0" y="862" width="414" height="200"/>
+                                                <rect key="frame" x="0.0" y="862" width="414" height="207"/>
                                                 <subviews>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vJQ-dT-rfY">
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vJQ-dT-rfY">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                                         <color key="backgroundColor" red="0.88326996560000004" green="0.84302788969999998" blue="0.84255933760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uGe-zF-bWJ">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="200" id="PFS-km-EWq"/>
+                                                        </constraints>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uGe-zF-bWJ">
                                                             <size key="itemSize" width="409" height="163"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="a7adethCell" id="t9R-1z-Vz3">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" reuseIdentifier="a7adethCell" id="t9R-1z-Vz3" customClass="A7adethCollectionViewCell" customModule="Al_Emsakia___الامساكية" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="18.5" width="409" height="163"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HvS-Z4-reb">
+                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3lX-fo-u8U">
                                                                     <rect key="frame" x="0.0" y="0.0" width="409" height="163"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sOU-IY-Zi5">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sOU-IY-Zi5">
                                                                             <rect key="frame" x="0.0" y="0.0" width="409" height="163"/>
-                                                                            <string key="text">قال الرسول صلى الله عليه وسلم: (المؤمنُ القويُّ خيرٌ وأحبُّ إلى اللهِ من المؤمنِ الضعيفِ ، وفي كلٍ خيرٌ احرصْ على ما ينفعُك واستعنْ باللهِ ولا تعجِزنَّ ، وإن أصابَك شيءٌ فلا تقلْ : لو أني فعلتُ لكانَ كذا وكذا ، ولكن قلْ قدَّرَ اللهُ وما شاءَ فعلَ فإن لو تفتحُ عملَ الشيطانِ).</string>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="sOU-IY-Zi5" secondAttribute="height" multiplier="409:163" id="MsF-aa-xGl"/>
+                                                                            </constraints>
                                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                                             <color key="textColor" red="0.16406514489999999" green="0.19715650239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -437,23 +442,27 @@
                                                                     </subviews>
                                                                     <constraints>
                                                                         <constraint firstAttribute="trailing" secondItem="sOU-IY-Zi5" secondAttribute="trailing" id="8tR-AC-1da"/>
-                                                                        <constraint firstItem="sOU-IY-Zi5" firstAttribute="top" secondItem="HvS-Z4-reb" secondAttribute="top" id="MpJ-W5-qg5"/>
-                                                                        <constraint firstItem="sOU-IY-Zi5" firstAttribute="leading" secondItem="HvS-Z4-reb" secondAttribute="leading" id="Tc5-5U-mgm"/>
+                                                                        <constraint firstItem="sOU-IY-Zi5" firstAttribute="top" secondItem="3lX-fo-u8U" secondAttribute="top" id="MpJ-W5-qg5"/>
+                                                                        <constraint firstItem="sOU-IY-Zi5" firstAttribute="leading" secondItem="3lX-fo-u8U" secondAttribute="leading" id="Tc5-5U-mgm"/>
                                                                         <constraint firstAttribute="bottom" secondItem="sOU-IY-Zi5" secondAttribute="bottom" id="gl1-AE-gkZ"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <viewLayoutGuide key="safeArea" id="4Uc-LQ-zYu"/>
+                                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                                 <size key="customSize" width="409" height="163"/>
+                                                                <connections>
+                                                                    <outlet property="a7adethLabel" destination="sOU-IY-Zi5" id="tkC-6Q-3sL"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="vJQ-dT-rfY" firstAttribute="top" secondItem="PbO-QH-pu7" secondAttribute="top" id="157-QI-Lg8"/>
-                                                    <constraint firstAttribute="trailing" secondItem="vJQ-dT-rfY" secondAttribute="trailing" id="Igh-gA-ChS"/>
-                                                    <constraint firstItem="vJQ-dT-rfY" firstAttribute="leading" secondItem="PbO-QH-pu7" secondAttribute="leading" id="LL4-1J-Hj2"/>
-                                                    <constraint firstAttribute="bottom" secondItem="vJQ-dT-rfY" secondAttribute="bottom" id="Obd-VL-hIH"/>
-                                                    <constraint firstAttribute="width" secondItem="PbO-QH-pu7" secondAttribute="height" multiplier="207:100" id="U12-no-ngj"/>
+                                                    <constraint firstItem="vJQ-dT-rfY" firstAttribute="top" secondItem="PbO-QH-pu7" secondAttribute="top" id="JCs-sJ-U2A"/>
+                                                    <constraint firstItem="vJQ-dT-rfY" firstAttribute="leading" secondItem="PbO-QH-pu7" secondAttribute="leading" id="K8u-eG-M5Z"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vJQ-dT-rfY" secondAttribute="trailing" id="SqL-Oo-6aG"/>
+                                                    <constraint firstAttribute="width" secondItem="PbO-QH-pu7" secondAttribute="height" multiplier="2:1" id="U12-no-ngj"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -504,6 +513,7 @@
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="vEN-pS-5fL" id="ZWh-86-MDj"/>
+                        <outlet property="collectionView" destination="vJQ-dT-rfY" id="YQV-1K-3M0"/>
                         <outlet property="nextPrayerTimeLabel" destination="Dk7-f2-0bc" id="kHh-tu-w5v"/>
                         <outlet property="todayAsrLabel" destination="ZXn-Pv-93e" id="FHI-dg-1mF"/>
                         <outlet property="todayCalenderLabel" destination="HDt-wG-2JA" id="XYH-bp-DGm"/>
