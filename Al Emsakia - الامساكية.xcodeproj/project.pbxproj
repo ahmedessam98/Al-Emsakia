@@ -22,6 +22,11 @@
 		7F8153AB260257A2007D3C60 /* PickerDataCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153AA260257A2007D3C60 /* PickerDataCC.swift */; };
 		7F8153AE260257B8007D3C60 /* AutoLocationCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153AD260257B8007D3C60 /* AutoLocationCC.swift */; };
 		7F8153B126025814007D3C60 /* Additional Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153B026025814007D3C60 /* Additional Function.swift */; };
+		7F82CB192622D88A00FC0D9B /* QeblaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB182622D88A00FC0D9B /* QeblaViewController.swift */; };
+		7F82CB2B26234A8100FC0D9B /* CLLocationManager + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB2A26234A8100FC0D9B /* CLLocationManager + Extensions.swift */; };
+		7F82CB2E26234AFF00FC0D9B /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB2D26234AFF00FC0D9B /* LocationDelegate.swift */; };
+		7F82CB3126234B8500FC0D9B /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB3026234B8500FC0D9B /* UserDefaults+Extensions.swift */; };
+		7F82CB3426234CA900FC0D9B /* DidLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB3326234CA900FC0D9B /* DidLoad.swift */; };
 		7FA97EA8261A15020018A832 /* LoadFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97EA7261A15020018A832 /* LoadFunction.swift */; };
 		7FB92B7A25FE1031002601E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7925FE1031002601E9 /* AppDelegate.swift */; };
 		7FB92B7C25FE1031002601E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7B25FE1031002601E9 /* SceneDelegate.swift */; };
@@ -57,6 +62,11 @@
 		7F8153AA260257A2007D3C60 /* PickerDataCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDataCC.swift; sourceTree = "<group>"; };
 		7F8153AD260257B8007D3C60 /* AutoLocationCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLocationCC.swift; sourceTree = "<group>"; };
 		7F8153B026025814007D3C60 /* Additional Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Additional Function.swift"; sourceTree = "<group>"; };
+		7F82CB182622D88A00FC0D9B /* QeblaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QeblaViewController.swift; sourceTree = "<group>"; };
+		7F82CB2A26234A8100FC0D9B /* CLLocationManager + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager + Extensions.swift"; sourceTree = "<group>"; };
+		7F82CB2D26234AFF00FC0D9B /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
+		7F82CB3026234B8500FC0D9B /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		7F82CB3326234CA900FC0D9B /* DidLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidLoad.swift; sourceTree = "<group>"; };
 		7FA97EA7261A15020018A832 /* LoadFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFunction.swift; sourceTree = "<group>"; };
 		7FB92B7625FE1031002601E9 /* Al Emsakia - الامساكية.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Al Emsakia - الامساكية.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB92B7925FE1031002601E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +224,9 @@
 		7F767E2A26220BDE00300531 /* QeblaModel */ = {
 			isa = PBXGroup;
 			children = (
+				7F82CB2D26234AFF00FC0D9B /* LocationDelegate.swift */,
+				7F82CB2A26234A8100FC0D9B /* CLLocationManager + Extensions.swift */,
+				7F82CB3026234B8500FC0D9B /* UserDefaults+Extensions.swift */,
 			);
 			path = QeblaModel;
 			sourceTree = "<group>";
@@ -229,6 +242,8 @@
 		7F767E2C26220BF700300531 /* QeblaController */ = {
 			isa = PBXGroup;
 			children = (
+				7F82CB182622D88A00FC0D9B /* QeblaViewController.swift */,
+				7F82CB3326234CA900FC0D9B /* DidLoad.swift */,
 			);
 			path = QeblaController;
 			sourceTree = "<group>";
@@ -408,11 +423,13 @@
 				7FD17938260CCA2800BD384A /* AzkarMasa2ViewController.swift in Sources */,
 				7F31359D261DAD820048EFFC /* do3a2ViewController.swift in Sources */,
 				7F10BA4F2601274100EBA7D5 /* Extension.swift in Sources */,
+				7F82CB2E26234AFF00FC0D9B /* LocationDelegate.swift in Sources */,
 				7F5A2D4C260F86AF00DCDBF3 /* ContainerViewController.swift in Sources */,
 				7FD17946260DDE5B00BD384A /* UIPageController.swift in Sources */,
 				7F4B084A2603D20900C412F2 /* LabelDataEntry.swift in Sources */,
 				7FD1794C260DE20100BD384A /* AdditionalFunctions.swift in Sources */,
 				7FB92B7E25FE1031002601E9 /* MainViewController.swift in Sources */,
+				7F82CB2B26234A8100FC0D9B /* CLLocationManager + Extensions.swift in Sources */,
 				7F8153B126025814007D3C60 /* Additional Function.swift in Sources */,
 				7F8153A42602562F007D3C60 /* SelectCCViewController.swift in Sources */,
 				7F8153AE260257B8007D3C60 /* AutoLocationCC.swift in Sources */,
@@ -420,6 +437,8 @@
 				7FB92B7A25FE1031002601E9 /* AppDelegate.swift in Sources */,
 				7F4B08412603943B00C412F2 /* AutoLocationFunctions.swift in Sources */,
 				7F8153AB260257A2007D3C60 /* PickerDataCC.swift in Sources */,
+				7F82CB3426234CA900FC0D9B /* DidLoad.swift in Sources */,
+				7F82CB3126234B8500FC0D9B /* UserDefaults+Extensions.swift in Sources */,
 				7FD17943260DDDBE00BD384A /* PageViewController.swift in Sources */,
 				7F8153A726025788007D3C60 /* DidLoadCC.swift in Sources */,
 				7F0EC5252604AB7400B1FAC1 /* AzanAPI.swift in Sources */,
@@ -427,6 +446,7 @@
 				7F5A2D49260E4C1C00DCDBF3 /* QuranViewController.swift in Sources */,
 				7FB92B7C25FE1031002601E9 /* SceneDelegate.swift in Sources */,
 				7FD17935260CCA1300BD384A /* AzkarSapa7ViewController.swift in Sources */,
+				7F82CB192622D88A00FC0D9B /* QeblaViewController.swift in Sources */,
 				7F0EC5222604AB4A00B1FAC1 /* Azan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

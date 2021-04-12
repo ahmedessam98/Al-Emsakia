@@ -10,7 +10,7 @@ extension MainViewController {
         country = defaults.string(forKey: "country") ?? ""
         
         if country == "" || city == "" {
-            show(story: "SelectCC", VC: SelectCCViewController.self)
+            showFull(story: "SelectCC", VC: SelectCCViewController.self)
         }else {
             
             cityLabel.text = city

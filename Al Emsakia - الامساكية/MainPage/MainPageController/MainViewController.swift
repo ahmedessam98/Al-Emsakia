@@ -9,9 +9,6 @@ class MainViewController: UIViewController{
     var defaults = UserDefaults.standard
     
     let urlBaseString = "http://api.aladhan.com/v1/timingsByCity?"
-
-//    var delegate :AzanAPIDelegate?
-    
     
 //Main info View
     @IBOutlet weak var todayCalenderLabel: UILabel!
@@ -41,17 +38,16 @@ class MainViewController: UIViewController{
     
 //Go to Quran View
     @IBAction func goToQuranBtn(_ sender: UIButton) {
-        show(story: "Quran", VC: PageViewController.self)
+        showFull(story: "Quran", VC: PageViewController.self)
     }
     
 //Go to Qibla View
     @IBAction func goToQiblaBtn(_ sender: UIButton) {
-        print(city)
-        print(country)
-        city = ""
-        country = ""
-        show(story: "SelectCC", VC: SelectCCViewController.self)
+
+        showFull(story: "Qebla", VC: QeblaViewController.self)
     }
+    
+//A7adeth CollectionView
     
     
 }
