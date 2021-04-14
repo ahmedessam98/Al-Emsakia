@@ -10,9 +10,8 @@ class fehresTableViewController: UIViewController,UITableViewDelegate,UITableVie
 
         tableView.delegate = self
         tableView.dataSource = self
-
     }
-
+    
     @IBAction func backToQuran(_ sender: UIButton) {
         
         dismiss(animated: true, completion: nil)

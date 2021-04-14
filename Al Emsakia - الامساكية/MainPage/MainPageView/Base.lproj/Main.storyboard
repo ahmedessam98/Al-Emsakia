@@ -22,35 +22,62 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fDJ-Y3-qUu">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1069"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1119"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNV-o9-aif">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMn-iY-GpE" userLabel="SettingView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="خلفية الرئيسية" translatesAutoresizingMaskIntoConstraints="NO" id="kQZ-eR-prz">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3K-DS-VFX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="A6T-JA-TpX"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Setting Wheel"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdH-dM-4Pt">
+                                                        <rect key="frame" x="324" y="0.0" width="90" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="90" id="uQv-f6-vFo"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Premium"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.55575752298495829" green="0.69985352870960127" blue="0.83958597715736039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="qdH-dM-4Pt" firstAttribute="top" secondItem="EMn-iY-GpE" secondAttribute="top" id="4XR-hk-k33"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qdH-dM-4Pt" secondAttribute="trailing" id="4fP-s3-UN2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qdH-dM-4Pt" secondAttribute="bottom" id="4oM-cw-wcM"/>
+                                                    <constraint firstAttribute="width" secondItem="EMn-iY-GpE" secondAttribute="height" multiplier="207:25" id="OKj-lC-qgI"/>
+                                                    <constraint firstItem="l3K-DS-VFX" firstAttribute="leading" secondItem="EMn-iY-GpE" secondAttribute="leading" id="RzD-MD-ilF"/>
+                                                    <constraint firstItem="l3K-DS-VFX" firstAttribute="top" secondItem="EMn-iY-GpE" secondAttribute="top" id="blQ-Md-FNA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="l3K-DS-VFX" secondAttribute="bottom" id="wD2-jF-FVl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNV-o9-aif" userLabel="MainInfoView">
+                                                <rect key="frame" x="0.0" y="50" width="414" height="300"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="خلفية الرئيسية" translatesAutoresizingMaskIntoConstraints="NO" id="kQZ-eR-prz">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الصلاة التالية :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e2d-A8-YIF">
-                                                        <rect key="frame" x="231.5" y="50" width="168.5" height="52"/>
+                                                        <rect key="frame" x="221.5" y="30" width="168" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="036-2Q-3P9"/>
+                                                            <constraint firstAttribute="width" secondItem="e2d-A8-YIF" secondAttribute="height" multiplier="42:13" id="OK2-cF-BHs"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <color key="textColor" systemColor="systemIndigoColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dk7-f2-0bc">
-                                                        <rect key="frame" x="75" y="106" width="264" height="108"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="Dk7-f2-0bc" secondAttribute="height" multiplier="296:121" id="tvV-2X-CbZ"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="90"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dk7-f2-0bc">
+                                                        <rect key="frame" x="107" y="108" width="200.5" height="84"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="70"/>
                                                         <color key="textColor" systemColor="systemOrangeColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06\03\2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HDt-wG-2JA">
-                                                        <rect key="frame" x="5" y="30" width="176" height="56"/>
+                                                        <rect key="frame" x="5" y="33" width="166" height="53"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="HDt-wG-2JA" secondAttribute="height" multiplier="22:7" id="ROX-K9-WPX"/>
                                                         </constraints>
@@ -83,20 +110,19 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="XNV-o9-aif" secondAttribute="height" multiplier="69:50" id="7gi-ln-mtt"/>
-                                                    <constraint firstItem="Dk7-f2-0bc" firstAttribute="centerY" secondItem="XNV-o9-aif" secondAttribute="centerY" constant="10" id="A5U-Wm-s3u"/>
+                                                    <constraint firstItem="HDt-wG-2JA" firstAttribute="top" secondItem="XNV-o9-aif" secondAttribute="top" constant="33" id="F20-9Q-yG8"/>
                                                     <constraint firstItem="HDt-wG-2JA" firstAttribute="leading" secondItem="XNV-o9-aif" secondAttribute="leading" constant="5" id="GOh-U1-kSh"/>
+                                                    <constraint firstItem="e2d-A8-YIF" firstAttribute="top" secondItem="XNV-o9-aif" secondAttribute="top" constant="30" id="Jzq-ck-Njb"/>
                                                     <constraint firstAttribute="trailing" secondItem="e2d-A8-YIF" secondAttribute="trailing" id="QJt-C3-JYu"/>
+                                                    <constraint firstItem="Dk7-f2-0bc" firstAttribute="centerY" secondItem="XNV-o9-aif" secondAttribute="centerY" id="WCr-00-ROi"/>
                                                     <constraint firstItem="1xh-bq-Yx3" firstAttribute="leading" secondItem="XNV-o9-aif" secondAttribute="leading" constant="30" id="dwY-5T-ohF"/>
-                                                    <constraint firstItem="e2d-A8-YIF" firstAttribute="top" secondItem="XNV-o9-aif" secondAttribute="top" constant="50" id="eNb-nT-h6K"/>
                                                     <constraint firstAttribute="bottom" secondItem="1xh-bq-Yx3" secondAttribute="bottom" constant="10" id="fCa-1F-6sq"/>
-                                                    <constraint firstItem="HDt-wG-2JA" firstAttribute="top" secondItem="XNV-o9-aif" secondAttribute="top" constant="30" id="sVP-pG-keX"/>
-                                                    <constraint firstItem="e2d-A8-YIF" firstAttribute="firstBaseline" secondItem="HDt-wG-2JA" secondAttribute="baseline" id="v9b-cO-CvJ"/>
-                                                    <constraint firstItem="Dk7-f2-0bc" firstAttribute="centerX" secondItem="XNV-o9-aif" secondAttribute="centerX" id="vg5-hc-MAS"/>
+                                                    <constraint firstItem="Dk7-f2-0bc" firstAttribute="centerX" secondItem="XNV-o9-aif" secondAttribute="centerX" id="rt3-EX-r4U"/>
                                                     <constraint firstItem="e2d-A8-YIF" firstAttribute="leading" secondItem="HDt-wG-2JA" secondAttribute="trailing" constant="50.5" id="xFo-Og-riH"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nrf-VG-XGE">
-                                                <rect key="frame" x="0.0" y="300" width="414" height="90"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nrf-VG-XGE" userLabel="MainPrayerTimeView">
+                                                <rect key="frame" x="0.0" y="350" width="414" height="90"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8WX-xN-dyJ">
                                                         <rect key="frame" x="10" y="10" width="395" height="77"/>
@@ -198,8 +224,8 @@
                                                     <constraint firstAttribute="trailing" secondItem="8WX-xN-dyJ" secondAttribute="trailing" constant="10" id="zG9-iL-5wu"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPA-hN-5UZ">
-                                                <rect key="frame" x="0.0" y="390" width="414" height="92"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPA-hN-5UZ" userLabel="SidePrayerTimeView">
+                                                <rect key="frame" x="0.0" y="440" width="414" height="92"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4GQ-S2-CKk">
                                                         <rect key="frame" x="170.5" y="4" width="73.5" height="68"/>
@@ -273,8 +299,8 @@
                                                     <constraint firstItem="4GQ-S2-CKk" firstAttribute="centerX" secondItem="gPA-hN-5UZ" secondAttribute="centerX" id="yYW-Jq-DCa"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIw-qL-NQb">
-                                                <rect key="frame" x="0.0" y="482" width="414" height="115"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIw-qL-NQb" userLabel="AzkarView">
+                                                <rect key="frame" x="0.0" y="532" width="414" height="115"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ابدا يومك بالاذكار تجلب الطمأنينة وتقربك من الله في وقت الأزمات" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KI5-wk-XAL">
                                                         <rect key="frame" x="10" y="0.0" width="469" height="60"/>
@@ -321,8 +347,8 @@
                                                     <constraint firstAttribute="bottom" secondItem="qxz-fJ-F6r" secondAttribute="bottom" constant="10" id="zyr-1W-YgI"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTv-NB-p9R">
-                                                <rect key="frame" x="0.0" y="597" width="414" height="128"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTv-NB-p9R" userLabel="QuranView">
+                                                <rect key="frame" x="0.0" y="647" width="414" height="128"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="39Z-HE-Ezq">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
@@ -360,8 +386,8 @@
                                                     <constraint firstAttribute="bottom" secondItem="NkF-hz-sXg" secondAttribute="bottom" id="zBi-pT-LXP"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-fH-ce8">
-                                                <rect key="frame" x="0.0" y="725" width="414" height="137"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-fH-ce8" userLabel="QiblaView">
+                                                <rect key="frame" x="0.0" y="775" width="414" height="137"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="القبلة" translatesAutoresizingMaskIntoConstraints="NO" id="ot3-6U-qJk">
                                                         <rect key="frame" x="0.0" y="0.0" width="139" height="137"/>
@@ -407,8 +433,8 @@
                                                     <constraint firstItem="JRP-7F-Bze" firstAttribute="leading" secondItem="ot3-6U-qJk" secondAttribute="trailing" id="u3B-gX-130"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbO-QH-pu7">
-                                                <rect key="frame" x="0.0" y="862" width="414" height="207"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbO-QH-pu7" userLabel="A7adethView">
+                                                <rect key="frame" x="0.0" y="912" width="414" height="207"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vJQ-dT-rfY">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -487,7 +513,6 @@
                                             <constraint firstItem="Zqh-fH-ce8" firstAttribute="top" secondItem="KTv-NB-p9R" secondAttribute="bottom" id="paV-B8-3Xf"/>
                                             <constraint firstAttribute="trailing" secondItem="PbO-QH-pu7" secondAttribute="trailing" id="qyL-qF-HHy"/>
                                             <constraint firstAttribute="trailing" secondItem="gPA-hN-5UZ" secondAttribute="trailing" id="uV9-4P-Psb"/>
-                                            <constraint firstItem="XNV-o9-aif" firstAttribute="top" secondItem="fDJ-Y3-qUu" secondAttribute="top" id="ulT-ba-9Vw"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -515,6 +540,7 @@
                         <outlet property="cityLabel" destination="vEN-pS-5fL" id="ZWh-86-MDj"/>
                         <outlet property="collectionView" destination="vJQ-dT-rfY" id="YQV-1K-3M0"/>
                         <outlet property="nextPrayerTimeLabel" destination="Dk7-f2-0bc" id="kHh-tu-w5v"/>
+                        <outlet property="nextSalaLabel" destination="e2d-A8-YIF" id="E2f-gg-uzH"/>
                         <outlet property="todayAsrLabel" destination="ZXn-Pv-93e" id="FHI-dg-1mF"/>
                         <outlet property="todayCalenderLabel" destination="HDt-wG-2JA" id="XYH-bp-DGm"/>
                         <outlet property="todayFajrLabel" destination="4Ug-ED-jMY" id="XDW-2T-HMf"/>
@@ -528,18 +554,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="-63"/>
+            <point key="canvasLocation" x="740.57971014492762" y="-63.616071428571423"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Premium" width="251" height="201"/>
+        <image name="Setting Wheel" width="512" height="512"/>
         <image name="location.fill" catalog="system" width="128" height="121"/>
         <image name="القبلة" width="614" height="430"/>
-        <image name="خلفية الرئيسية" width="253" height="199"/>
+        <image name="خلفية الرئيسية" width="253" height="199"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

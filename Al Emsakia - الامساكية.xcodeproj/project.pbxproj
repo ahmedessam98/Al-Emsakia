@@ -47,6 +47,7 @@
 		7FD17943260DDDBE00BD384A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD17942260DDDBE00BD384A /* PageViewController.swift */; };
 		7FD17946260DDE5B00BD384A /* UIPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD17945260DDE5B00BD384A /* UIPageController.swift */; };
 		7FD1794C260DE20100BD384A /* AdditionalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1794B260DE20100BD384A /* AdditionalFunctions.swift */; };
+		7FF4B3842625E27400F6AB61 /* TimerFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4B3832625E27400F6AB61 /* TimerFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		7FD17942260DDDBE00BD384A /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		7FD17945260DDE5B00BD384A /* UIPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageController.swift; sourceTree = "<group>"; };
 		7FD1794B260DE20100BD384A /* AdditionalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalFunctions.swift; sourceTree = "<group>"; };
+		7FF4B3832625E27400F6AB61 /* TimerFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				7F0EC5212604AB4A00B1FAC1 /* Azan.swift */,
 				7F0EC5242604AB7400B1FAC1 /* AzanAPI.swift */,
+				7FF4B3832625E27400F6AB61 /* TimerFunction.swift */,
 			);
 			path = MainPageModel;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				7FB92B7D25FE1031002601E9 /* MainViewController.swift */,
 				7F4B08472603CFFE00C412F2 /* WillAppearMain.swift */,
 				7F10BA32260126FF00EBA7D5 /* LabelDataEntry.swift */,
+				7F10BA5E26012B6000EBA7D5 /* SelectCountry&City */,
 				7F82CB442623D20200FC0D9B /* A7adethCollection */,
 			);
 			path = MainPageController;
@@ -303,7 +307,6 @@
 		7FB92B7825FE1031002601E9 /* Al Emsakia - الامساكية */ = {
 			isa = PBXGroup;
 			children = (
-				7F10BA5E26012B6000EBA7D5 /* SelectCountry&City */,
 				7F10BA6226012BEC00EBA7D5 /* MainPage */,
 				7F10BA6826012CC700EBA7D5 /* Azkar */,
 				7F10BA6726012CA500EBA7D5 /* Quran */,
@@ -444,6 +447,7 @@
 				7F5A2D4C260F86AF00DCDBF3 /* ContainerViewController.swift in Sources */,
 				7FD17946260DDE5B00BD384A /* UIPageController.swift in Sources */,
 				7F4B084A2603D20900C412F2 /* LabelDataEntry.swift in Sources */,
+				7FF4B3842625E27400F6AB61 /* TimerFunction.swift in Sources */,
 				7FD1794C260DE20100BD384A /* AdditionalFunctions.swift in Sources */,
 				7FB92B7E25FE1031002601E9 /* MainViewController.swift in Sources */,
 				7F82CB2B26234A8100FC0D9B /* CLLocationManager + Extensions.swift in Sources */,

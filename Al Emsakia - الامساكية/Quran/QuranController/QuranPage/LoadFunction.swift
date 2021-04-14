@@ -12,6 +12,7 @@ extension QuranViewController {
         quranPageImage.image = quranPages[pageIndex]
     }
     
+    
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if containerView.isHidden == true {

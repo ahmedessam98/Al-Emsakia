@@ -3,15 +3,41 @@ import UIKit
 class MainViewController: UIViewController{
 
     
-    //API Data
+//API Data
     var country = ""
     var city = ""
     var defaults = UserDefaults.standard
     
     let urlBaseString = "http://api.aladhan.com/v1/timingsByCity?"
     
+//Time Interval
+    var timerT:Timer?
+    
+    let formatterT:DateFormatter = {
+        let dateFormatterT = DateFormatter()
+        dateFormatterT.dateFormat = "dd-MM-y , HH:mm"
+        return dateFormatterT
+    }()
+    
+    var calenderT:String?
+    var FajrT:Date?
+    var ShroukT:Date?
+    var ZohrT:Date?
+    var AsrT:Date?
+    var MaghrbT:Date?
+    var IshaT:Date?
+    var MidNightT:Date?
+    
+//Setting View
+    @IBAction func settingPressed(_ sender: UIButton) {
+    }
+    @IBAction func premiumPressed(_ sender: UIButton) {
+    }
+    
+    
 //Main info View
     @IBOutlet weak var todayCalenderLabel: UILabel!
+    @IBOutlet weak var nextSalaLabel: UILabel!
     @IBOutlet weak var nextPrayerTimeLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     
@@ -36,18 +62,18 @@ class MainViewController: UIViewController{
         show(story: "AzkarMasa2", VC: AzkarMasa2ViewController.self)
     }
     
-//Go to Quran View
+//Quran View
     @IBAction func goToQuranBtn(_ sender: UIButton) {
-        showFull(story: "Quran", VC: PageViewController.self)
+        show(story: "Quran", VC: PageViewController.self)
     }
     
-//Go to Qibla View
+//Qibla View
     @IBAction func goToQiblaBtn(_ sender: UIButton) {
 
         showFull(story: "Qebla", VC: QeblaViewController.self)
     }
     
-//A7adeth CollectionView
+//A7adeth View
     
     @IBOutlet weak var collectionView: UICollectionView!
     

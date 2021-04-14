@@ -4,6 +4,10 @@ import CoreLocation
 
 extension SelectCCViewController {
     
+    override open var shouldAutorotate: Bool {
+            return false
+        }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

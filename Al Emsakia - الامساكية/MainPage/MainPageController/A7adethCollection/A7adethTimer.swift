@@ -3,7 +3,7 @@ import UIKit
 
 extension MainViewController {
     
-    func startTimer() {
+    func startA7adethTimer() {
         timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(moveToNextIndex), userInfo: nil, repeats: true)
     }
     

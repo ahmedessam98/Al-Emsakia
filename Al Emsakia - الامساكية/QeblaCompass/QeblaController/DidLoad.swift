@@ -31,4 +31,8 @@ extension QeblaViewController {
         }
       }
     }
+    
+    override open var shouldAutorotate: Bool {
+            return false
+        }
 }

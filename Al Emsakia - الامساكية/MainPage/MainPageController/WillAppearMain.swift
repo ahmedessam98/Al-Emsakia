@@ -8,8 +8,13 @@ extension MainViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        startTimer()
+        startA7adethTimer()
+        
     }
+    
+    override open var shouldAutorotate: Bool {
+            return false
+        }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -24,6 +29,12 @@ extension MainViewController {
             cityLabel.text = city
             fetchData(Country: country, City: city)
     }
+        timerT = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.getTimeOfDate), userInfo: nil, repeats: true)
   }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        timerT?.invalidate()
+    }
     
 }
