@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 
 class MainViewController: UIViewController{
 
@@ -6,6 +7,8 @@ class MainViewController: UIViewController{
 //API Data
     var country = ""
     var city = ""
+    var salaMethod = 4
+    var azanStatus:Bool = true
     var defaults = UserDefaults.standard
     
     let urlBaseString = "http://api.aladhan.com/v1/timingsByCity?"
@@ -28,10 +31,20 @@ class MainViewController: UIViewController{
     var IshaT:Date?
     var MidNightT:Date?
     
+//Azan Sound
+    var player: AVAudioPlayer?
+    
 //Setting View
     @IBAction func settingPressed(_ sender: UIButton) {
+        
+        let vc = UIStoryboard(name: "Setting", bundle: nil).instantiateViewController(identifier: "navigationSetting")
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+        
     }
+    
     @IBAction func premiumPressed(_ sender: UIButton) {
+        print("Premium Button Pressed")
     }
     
     

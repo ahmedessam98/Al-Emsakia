@@ -9,7 +9,7 @@ extension MainViewController {
     
     func fetchData(Country: String, City:String) {
             
-        let urlString = "\(urlBaseString)city=\(City)&country=\(Country)&method=5"
+        let urlString = "\(urlBaseString)city=\(City)&country=\(Country)&method=\(salaMethod)"
         
             // 1. Creat URL
         if let url = URL(string: urlString) {

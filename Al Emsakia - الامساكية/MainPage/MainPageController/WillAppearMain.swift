@@ -9,7 +9,6 @@ extension MainViewController {
         collectionView.dataSource = self
         
         startA7adethTimer()
-        
     }
     
     override open var shouldAutorotate: Bool {
@@ -21,6 +20,8 @@ extension MainViewController {
         
         city = defaults.string(forKey: "city") ?? ""
         country = defaults.string(forKey: "country") ?? ""
+        salaMethod = defaults.integer(forKey: "method")
+        azanStatus = defaults.bool(forKey: "azanStatus")
         
         if country == "" || city == "" {
             showFull(story: "SelectCC", VC: SelectCCViewController.self)

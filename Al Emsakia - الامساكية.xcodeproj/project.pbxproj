@@ -10,12 +10,19 @@
 		7F0EC5222604AB4A00B1FAC1 /* Azan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC5212604AB4A00B1FAC1 /* Azan.swift */; };
 		7F0EC5252604AB7400B1FAC1 /* AzanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC5242604AB7400B1FAC1 /* AzanAPI.swift */; };
 		7F10BA4F2601274100EBA7D5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10BA4E2601274000EBA7D5 /* Extension.swift */; };
+		7F29CC952627401600BD290C /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F29CC942627401600BD290C /* Setting.storyboard */; };
+		7F29CC9A262741E400BD290C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29CC99262741E400BD290C /* SettingViewController.swift */; };
 		7F31359D261DAD820048EFFC /* do3a2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31359C261DAD820048EFFC /* do3a2ViewController.swift */; };
 		7F4B08412603943B00C412F2 /* AutoLocationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B08402603943B00C412F2 /* AutoLocationFunctions.swift */; };
 		7F4B08482603CFFE00C412F2 /* WillAppearMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B08472603CFFE00C412F2 /* WillAppearMain.swift */; };
 		7F4B084A2603D20900C412F2 /* LabelDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F10BA32260126FF00EBA7D5 /* LabelDataEntry.swift */; };
 		7F5A2D49260E4C1C00DCDBF3 /* QuranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A2D48260E4C1C00DCDBF3 /* QuranViewController.swift */; };
 		7F5A2D4C260F86AF00DCDBF3 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A2D4B260F86AF00DCDBF3 /* ContainerViewController.swift */; };
+		7F5A98532628E53200495334 /* azanFull.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A98522628E53200495334 /* azanFull.mp3 */; };
+		7F5A98562628E75F00495334 /* FajrAzan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A98552628E75F00495334 /* FajrAzan.mp3 */; };
+		7F5A98592628E7B700495334 /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A98582628E7B700495334 /* azan.mp3 */; };
+		7F7129642628AC8C00F2049F /* AdditionalFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7129632628AC8C00F2049F /* AdditionalFunction.swift */; };
+		7F7129672628AFCB00F2049F /* DidLoadSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7129662628AFCB00F2049F /* DidLoadSetting.swift */; };
 		7F767E2E26220C4A00300531 /* Qebla.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F767E2D26220C4A00300531 /* Qebla.storyboard */; };
 		7F8153A42602562F007D3C60 /* SelectCCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153A32602562F007D3C60 /* SelectCCViewController.swift */; };
 		7F8153A726025788007D3C60 /* DidLoadCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8153A626025788007D3C60 /* DidLoadCC.swift */; };
@@ -30,6 +37,8 @@
 		7F82CB3F2623CDD500FC0D9B /* A7adethCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB3E2623CDD500FC0D9B /* A7adethCollectionViewController.swift */; };
 		7F82CB422623CFB900FC0D9B /* A7adethCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB412623CFB900FC0D9B /* A7adethCollectionViewCell.swift */; };
 		7F82CB462623D24300FC0D9B /* A7adethTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82CB452623D24300FC0D9B /* A7adethTimer.swift */; };
+		7FA6C34D26287D2400568F7F /* WillAppearSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6C34C26287D2400568F7F /* WillAppearSetting.swift */; };
+		7FA6C35026288FB900568F7F /* PickerMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6C34F26288FB900568F7F /* PickerMethod.swift */; };
 		7FA97EA8261A15020018A832 /* LoadFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97EA7261A15020018A832 /* LoadFunction.swift */; };
 		7FB92B7A25FE1031002601E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7925FE1031002601E9 /* AppDelegate.swift */; };
 		7FB92B7C25FE1031002601E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7B25FE1031002601E9 /* SceneDelegate.swift */; };
@@ -38,6 +47,7 @@
 		7FB92B8325FE1034002601E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB92B8225FE1034002601E9 /* Assets.xcassets */; };
 		7FB92B8625FE1034002601E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB92B8425FE1034002601E9 /* LaunchScreen.storyboard */; };
 		7FB92B9025FE16A4002601E9 /* SelectCC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB92B8F25FE16A4002601E9 /* SelectCC.storyboard */; };
+		7FC91B6E2628B211007AED50 /* AzanSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC91B6D2628B211007AED50 /* AzanSound.swift */; };
 		7FCD2E8526218F0E00A938DC /* fehresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD2E8426218F0E00A938DC /* fehresTableViewController.swift */; };
 		7FD1792C260CC4A600BD384A /* AzkarSapa7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD1792B260CC4A600BD384A /* AzkarSapa7.storyboard */; };
 		7FD1792F260CC4F400BD384A /* AzkarMasa2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD1792E260CC4F400BD384A /* AzkarMasa2.storyboard */; };
@@ -55,11 +65,18 @@
 		7F0EC5242604AB7400B1FAC1 /* AzanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanAPI.swift; sourceTree = "<group>"; };
 		7F10BA32260126FF00EBA7D5 /* LabelDataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDataEntry.swift; sourceTree = "<group>"; };
 		7F10BA4E2601274000EBA7D5 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		7F29CC942627401600BD290C /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		7F29CC99262741E400BD290C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		7F31359C261DAD820048EFFC /* do3a2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = do3a2ViewController.swift; sourceTree = "<group>"; };
 		7F4B08402603943B00C412F2 /* AutoLocationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLocationFunctions.swift; sourceTree = "<group>"; };
 		7F4B08472603CFFE00C412F2 /* WillAppearMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillAppearMain.swift; sourceTree = "<group>"; };
 		7F5A2D48260E4C1C00DCDBF3 /* QuranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranViewController.swift; sourceTree = "<group>"; };
 		7F5A2D4B260F86AF00DCDBF3 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		7F5A98522628E53200495334 /* azanFull.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azanFull.mp3; sourceTree = "<group>"; };
+		7F5A98552628E75F00495334 /* FajrAzan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FajrAzan.mp3; sourceTree = "<group>"; };
+		7F5A98582628E7B700495334 /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
+		7F7129632628AC8C00F2049F /* AdditionalFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalFunction.swift; sourceTree = "<group>"; };
+		7F7129662628AFCB00F2049F /* DidLoadSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidLoadSetting.swift; sourceTree = "<group>"; };
 		7F767E2D26220C4A00300531 /* Qebla.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Qebla.storyboard; sourceTree = "<group>"; };
 		7F8153A32602562F007D3C60 /* SelectCCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCCViewController.swift; sourceTree = "<group>"; };
 		7F8153A626025788007D3C60 /* DidLoadCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidLoadCC.swift; sourceTree = "<group>"; };
@@ -74,6 +91,8 @@
 		7F82CB3E2623CDD500FC0D9B /* A7adethCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A7adethCollectionViewController.swift; sourceTree = "<group>"; };
 		7F82CB412623CFB900FC0D9B /* A7adethCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A7adethCollectionViewCell.swift; sourceTree = "<group>"; };
 		7F82CB452623D24300FC0D9B /* A7adethTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A7adethTimer.swift; sourceTree = "<group>"; };
+		7FA6C34C26287D2400568F7F /* WillAppearSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillAppearSetting.swift; sourceTree = "<group>"; };
+		7FA6C34F26288FB900568F7F /* PickerMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMethod.swift; sourceTree = "<group>"; };
 		7FA97EA7261A15020018A832 /* LoadFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFunction.swift; sourceTree = "<group>"; };
 		7FB92B7625FE1031002601E9 /* Al Emsakia - الامساكية.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Al Emsakia - الامساكية.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB92B7925FE1031002601E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +103,7 @@
 		7FB92B8525FE1034002601E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FB92B8725FE1034002601E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FB92B8F25FE16A4002601E9 /* SelectCC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectCC.storyboard; sourceTree = "<group>"; };
+		7FC91B6D2628B211007AED50 /* AzanSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzanSound.swift; sourceTree = "<group>"; };
 		7FCD2E8426218F0E00A938DC /* fehresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fehresTableViewController.swift; sourceTree = "<group>"; };
 		7FD1792B260CC4A600BD384A /* AzkarSapa7.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AzkarSapa7.storyboard; sourceTree = "<group>"; };
 		7FD1792E260CC4F400BD384A /* AzkarMasa2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AzkarMasa2.storyboard; sourceTree = "<group>"; };
@@ -169,6 +189,8 @@
 				7F0EC5212604AB4A00B1FAC1 /* Azan.swift */,
 				7F0EC5242604AB7400B1FAC1 /* AzanAPI.swift */,
 				7FF4B3832625E27400F6AB61 /* TimerFunction.swift */,
+				7FC91B6D2628B211007AED50 /* AzanSound.swift */,
+				7F5A985B2628E8ED00495334 /* AzanSound */,
 			);
 			path = MainPageModel;
 			sourceTree = "<group>";
@@ -187,7 +209,6 @@
 				7FB92B7D25FE1031002601E9 /* MainViewController.swift */,
 				7F4B08472603CFFE00C412F2 /* WillAppearMain.swift */,
 				7F10BA32260126FF00EBA7D5 /* LabelDataEntry.swift */,
-				7F10BA5E26012B6000EBA7D5 /* SelectCountry&City */,
 				7F82CB442623D20200FC0D9B /* A7adethCollection */,
 			);
 			path = MainPageController;
@@ -230,6 +251,53 @@
 				7F767E2A26220BDE00300531 /* QeblaModel */,
 			);
 			path = QeblaCompass;
+			sourceTree = "<group>";
+		};
+		7F29CC972627416D00BD290C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7F686C0726275A1000CB51C9 /* SettingController */,
+				7F686C0826275A2B00CB51C9 /* SettingView */,
+				7F7129622628AC3F00F2049F /* SettingModel */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		7F5A985B2628E8ED00495334 /* AzanSound */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A98582628E7B700495334 /* azan.mp3 */,
+				7F5A98552628E75F00495334 /* FajrAzan.mp3 */,
+				7F5A98522628E53200495334 /* azanFull.mp3 */,
+			);
+			path = AzanSound;
+			sourceTree = "<group>";
+		};
+		7F686C0726275A1000CB51C9 /* SettingController */ = {
+			isa = PBXGroup;
+			children = (
+				7F29CC99262741E400BD290C /* SettingViewController.swift */,
+				7F7129662628AFCB00F2049F /* DidLoadSetting.swift */,
+				7FA6C34C26287D2400568F7F /* WillAppearSetting.swift */,
+				7FA6C34F26288FB900568F7F /* PickerMethod.swift */,
+			);
+			path = SettingController;
+			sourceTree = "<group>";
+		};
+		7F686C0826275A2B00CB51C9 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				7F29CC942627401600BD290C /* Setting.storyboard */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		7F7129622628AC3F00F2049F /* SettingModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F7129632628AC8C00F2049F /* AdditionalFunction.swift */,
+			);
+			path = SettingModel;
 			sourceTree = "<group>";
 		};
 		7F767E2A26220BDE00300531 /* QeblaModel */ = {
@@ -307,6 +375,8 @@
 		7FB92B7825FE1031002601E9 /* Al Emsakia - الامساكية */ = {
 			isa = PBXGroup;
 			children = (
+				7F29CC972627416D00BD290C /* Setting */,
+				7F10BA5E26012B6000EBA7D5 /* SelectCountry&City */,
 				7F10BA6226012BEC00EBA7D5 /* MainPage */,
 				7F10BA6826012CC700EBA7D5 /* Azkar */,
 				7F10BA6726012CA500EBA7D5 /* Quran */,
@@ -426,7 +496,11 @@
 				7FB92B8625FE1034002601E9 /* LaunchScreen.storyboard in Resources */,
 				7FB92B8325FE1034002601E9 /* Assets.xcassets in Resources */,
 				7F767E2E26220C4A00300531 /* Qebla.storyboard in Resources */,
+				7F29CC952627401600BD290C /* Setting.storyboard in Resources */,
+				7F5A98532628E53200495334 /* azanFull.mp3 in Resources */,
 				7FB92B8125FE1031002601E9 /* Main.storyboard in Resources */,
+				7F5A98592628E7B700495334 /* azan.mp3 in Resources */,
+				7F5A98562628E75F00495334 /* FajrAzan.mp3 in Resources */,
 				7FD17940260DDBD600BD384A /* Quran.storyboard in Resources */,
 				7FD1792C260CC4A600BD384A /* AzkarSapa7.storyboard in Resources */,
 			);
@@ -444,10 +518,12 @@
 				7F31359D261DAD820048EFFC /* do3a2ViewController.swift in Sources */,
 				7F10BA4F2601274100EBA7D5 /* Extension.swift in Sources */,
 				7F82CB2E26234AFF00FC0D9B /* LocationDelegate.swift in Sources */,
+				7F29CC9A262741E400BD290C /* SettingViewController.swift in Sources */,
 				7F5A2D4C260F86AF00DCDBF3 /* ContainerViewController.swift in Sources */,
 				7FD17946260DDE5B00BD384A /* UIPageController.swift in Sources */,
 				7F4B084A2603D20900C412F2 /* LabelDataEntry.swift in Sources */,
 				7FF4B3842625E27400F6AB61 /* TimerFunction.swift in Sources */,
+				7FC91B6E2628B211007AED50 /* AzanSound.swift in Sources */,
 				7FD1794C260DE20100BD384A /* AdditionalFunctions.swift in Sources */,
 				7FB92B7E25FE1031002601E9 /* MainViewController.swift in Sources */,
 				7F82CB2B26234A8100FC0D9B /* CLLocationManager + Extensions.swift in Sources */,
@@ -460,11 +536,15 @@
 				7FB92B7A25FE1031002601E9 /* AppDelegate.swift in Sources */,
 				7F4B08412603943B00C412F2 /* AutoLocationFunctions.swift in Sources */,
 				7F82CB422623CFB900FC0D9B /* A7adethCollectionViewCell.swift in Sources */,
+				7F7129642628AC8C00F2049F /* AdditionalFunction.swift in Sources */,
 				7F8153AB260257A2007D3C60 /* PickerDataCC.swift in Sources */,
 				7F82CB3426234CA900FC0D9B /* DidLoad.swift in Sources */,
 				7F82CB3126234B8500FC0D9B /* UserDefaults+Extensions.swift in Sources */,
 				7FD17943260DDDBE00BD384A /* PageViewController.swift in Sources */,
 				7F8153A726025788007D3C60 /* DidLoadCC.swift in Sources */,
+				7F7129672628AFCB00F2049F /* DidLoadSetting.swift in Sources */,
+				7FA6C34D26287D2400568F7F /* WillAppearSetting.swift in Sources */,
+				7FA6C35026288FB900568F7F /* PickerMethod.swift in Sources */,
 				7F0EC5252604AB7400B1FAC1 /* AzanAPI.swift in Sources */,
 				7F4B08482603CFFE00C412F2 /* WillAppearMain.swift in Sources */,
 				7F5A2D49260E4C1C00DCDBF3 /* QuranViewController.swift in Sources */,
@@ -548,7 +628,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -603,7 +683,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
