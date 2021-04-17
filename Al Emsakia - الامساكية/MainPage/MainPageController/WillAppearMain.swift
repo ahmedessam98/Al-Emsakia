@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import SystemConfiguration
 
 extension MainViewController {
     
@@ -28,7 +29,24 @@ extension MainViewController {
         }else {
             
             cityLabel.text = city
-            fetchData(Country: country, City: city)
+            if MainViewController.isConnectedToNetwork(){
+                print("Internet Connection Available!")
+                fetchData(Country: country, City: city)
+            }else{
+                print("Internet Connection not Available!")
+                //1. Creat alert
+                    let alert = UIAlertController(title: "No Internet Connection", message: "", preferredStyle: .alert)
+                    
+                //2. Creat action
+                    let cancell = UIAlertAction(title: "Cancell", style: .default, handler: nil)
+                    
+                //3. add action to alert
+                    alert.addAction(cancell)
+                    
+                //4. present the alert
+                    present(alert, animated: true, completion: nil)
+            }
+
     }
         timerT = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.getTimeOfDate), userInfo: nil, repeats: true)
   }

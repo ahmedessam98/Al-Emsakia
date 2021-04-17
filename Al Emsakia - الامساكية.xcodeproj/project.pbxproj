@@ -40,6 +40,7 @@
 		7FA6C34D26287D2400568F7F /* WillAppearSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6C34C26287D2400568F7F /* WillAppearSetting.swift */; };
 		7FA6C35026288FB900568F7F /* PickerMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6C34F26288FB900568F7F /* PickerMethod.swift */; };
 		7FA97EA8261A15020018A832 /* LoadFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97EA7261A15020018A832 /* LoadFunction.swift */; };
+		7FAF3B282629DA6E00E5DDB3 /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF3B272629DA6E00E5DDB3 /* InternetConnection.swift */; };
 		7FB92B7A25FE1031002601E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7925FE1031002601E9 /* AppDelegate.swift */; };
 		7FB92B7C25FE1031002601E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7B25FE1031002601E9 /* SceneDelegate.swift */; };
 		7FB92B7E25FE1031002601E9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92B7D25FE1031002601E9 /* MainViewController.swift */; };
@@ -94,6 +95,7 @@
 		7FA6C34C26287D2400568F7F /* WillAppearSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillAppearSetting.swift; sourceTree = "<group>"; };
 		7FA6C34F26288FB900568F7F /* PickerMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMethod.swift; sourceTree = "<group>"; };
 		7FA97EA7261A15020018A832 /* LoadFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFunction.swift; sourceTree = "<group>"; };
+		7FAF3B272629DA6E00E5DDB3 /* InternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnection.swift; sourceTree = "<group>"; };
 		7FB92B7625FE1031002601E9 /* Al Emsakia - الامساكية.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Al Emsakia - الامساكية.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB92B7925FE1031002601E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FB92B7B25FE1031002601E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				7F10BA4E2601274000EBA7D5 /* Extension.swift */,
+				7FAF3B272629DA6E00E5DDB3 /* InternetConnection.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				7FD17938260CCA2800BD384A /* AzkarMasa2ViewController.swift in Sources */,
 				7F31359D261DAD820048EFFC /* do3a2ViewController.swift in Sources */,
 				7F10BA4F2601274100EBA7D5 /* Extension.swift in Sources */,
+				7FAF3B282629DA6E00E5DDB3 /* InternetConnection.swift in Sources */,
 				7F82CB2E26234AFF00FC0D9B /* LocationDelegate.swift in Sources */,
 				7F29CC9A262741E400BD290C /* SettingViewController.swift in Sources */,
 				7F5A2D4C260F86AF00DCDBF3 /* ContainerViewController.swift in Sources */,
